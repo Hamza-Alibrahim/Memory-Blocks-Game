@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Memory Blocks Game</title>
+</head>
+
+<body>
+    <div class="control-button">
+        <span>Start Game</span>
+    </div>
+    <div class="container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+        <div class="timer">
+            You Have: <span>0</span> Seconds
+        </div>
+    </div>
+    <div class="memory-blocks">
+        <div class="block" data-name="youtube">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-youtube fa-10x" style="color: #ff0000;"></i></div>
+        </div>
+        <div class="block" data-name="youtube">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-youtube fa-10x" style="color: #ff0000;"></i></div>
+        </div>
+        <div class="block" data-name="facebook">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-facebook fa-10x" style="color: #1877f2;"></i></div>
+        </div>
+        <div class="block" data-name="facebook">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-facebook fa-10x" style="color: #1877f2;"></i></div>
+        </div>
+        <div class="block" data-name="whatsapp">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-whatsapp fa-10x" style="color:#075e54"></i></div>
+        </div>
+        <div class="block" data-name="whatsapp">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-whatsapp fa-10x" style="color:#075e54"></i></div>
+        </div>
+        <div class="block" data-name="github">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-github fa-10x" style="color:#bd2c00"></i></div>
+        </div>
+        <div class="block" data-name="github">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-github fa-10x" style="color:#bd2c00"></i></div>
+        </div>
+        <div class="block" data-name="html5">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-html5 fa-10x" style="color:#e34f26"></i></div>
+        </div>
+        <div class="block" data-name="html5">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-html5 fa-10x" style="color:#e34f26"></i></div>
+        </div>
+        <div class="block" data-name="css3">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-css3-alt fa-10x" style="color:#254bdd"></i></div>
+        </div>
+        <div class="block" data-name="css3">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-css3-alt fa-10x" style="color:#254bdd"></i></div>
+        </div>
+        <div class="block" data-name="js">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-js fa-10x" style="color:#f7df1e"></i></div>
+        </div>
+        <div class="block" data-name="js">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-js fa-10x" style="color:#f7df1e"></i></div>
+        </div>
+        <div class="block" data-name="vuejs">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-vuejs fa-10x" style="color:#42b883"></i></div>
+        </div>
+        <div class="block" data-name="vuejs">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-vuejs fa-10x" style="color:#42b883"></i></div>
+        </div>
+        <div class="block" data-name="react">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-react fa-10x" style="color:#00d8ff"></i></div>
+        </div>
+        <div class="block" data-name="react">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-react fa-10x" style="color:#00d8ff"></i></div>
+        </div>
+        <div class="block" data-name="sass">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-sass fa-10x" style="color:#c66394"></i></div>
+        </div>
+        <div class="block" data-name="sass">
+            <div class="face front"><i class="fa-solid fa-question fa-10x"></i></div>
+            <div class="face back"><i class="fa-brands fa-sass fa-10x" style="color:#c66394"></i></div>
+        </div>
+    </div>
+    <div class="lose">
+        <span>Game Over</span>
+    </div>
+    <div class="win">
+        <span>You Won</span>
+    </div>
+    <audio id="success" src="audio/success_bell-6776.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/sadwhisle-91469.mp3" preload="auto"></audio>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

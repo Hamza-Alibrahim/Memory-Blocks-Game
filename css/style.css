@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: tahoma, arial;
+}
+
+.control-button {
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.control-button span {
+    padding: 15px 25px;
+    background-color: #f44336;
+    border-radius: 6px;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+    margin: 20px auto;
+    font-size: 24px;
+    border: 5px solid #f44336;
+}
+
+.memory-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.memory-blocks.no-clicking {
+    pointer-events: none;
+}
+
+.memory-blocks .block {
+    width: 206px;
+    height: 200px;
+    text-align: center;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    margin: 7px;
+}
+
+.memory-blocks .block.flip,
+.memory-blocks .block.match {
+    transform: rotateY(180deg) !important;
+    pointer-events: none;
+}
+
+.memory-blocks .block .front {
+    background-color: #333;
+    color: white;
+    border: 5px solid #f44336;
+}
+
+.memory-blocks .block .front,
+.memory-blocks .block .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.memory-blocks .block .back {
+    background-color: #ddd;
+    transform: rotateY(180deg);
+}
+
+.memory-blocks .block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.lose,
+.win {
+    width: fit-content;
+    margin: 20px auto;
+    position: relative;
+    z-index: 20;
+}
+
+.lose span,
+.win span {
+    color: white;
+    font-size: 60px;
+    padding: 15px 25px;
+    border-radius: 6px;
+    display: none;
+}
+
+.lose span {
+    background-color: red;
+}
+
+.win span {
+    background-color: #2196f3;
+}
